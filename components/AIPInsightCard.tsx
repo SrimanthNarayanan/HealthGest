@@ -80,7 +80,7 @@ export const AIPInsightCard: React.FC<AIPInsightCardProps> = ({
         setInsight('');
 
         try {
-            const response = await fetch(`http://localhost:5000${apiEndpoint}`, {
+            const response = await fetch(`https://healthgestbackend.onrender.com${apiEndpoint}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ patient, visits }),

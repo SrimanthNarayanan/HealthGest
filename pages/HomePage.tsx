@@ -41,7 +41,7 @@ const HomePage: React.FC<HomePageProps> = ({ setPage }) => {
             setIsLoading(true);
             setError(null);
             try {
-                const response = await fetch('http://localhost:5000/api/home-summary');
+                const response = await fetch('https://healthgestbackend.onrender.com/api/home-summary');
                 if (!response.ok) {
                     throw new Error(`Server responded with status: ${response.status}`);
                 }

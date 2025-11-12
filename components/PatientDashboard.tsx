@@ -113,7 +113,7 @@ export const PatientDashboard: React.FC<PatientDashboardProps> = ({
 
                 if (isOngoing) {
                     console.log("Fetching predictions from rule-based engine...");
-                    const predictionResponse = await fetch('http://localhost:5000/api/ai/ongoing-progression', {
+                    const predictionResponse = await fetch('https://healthgestbackend.onrender.com/api/ai/ongoing-progression', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ visits, patient })
