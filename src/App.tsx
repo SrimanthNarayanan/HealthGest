@@ -1,14 +1,13 @@
 // App.tsx
 import React, { useState } from 'react';
-import type { Page } from './types.ts';
+import type { Page } from '../types.ts';
 
 // Import Pages
-import HomePage from './pages/HomePage.tsx';
-import PatientDetailsPage from './pages/PatientDetailsPage.tsx';
-import OngoingPatientsPage from './pages/OngoingPatientsPage.tsx';
-
+import HomePage from '../pages/HomePage.tsx';
+import PatientDetailsPage from '../pages/PatientDetailsPage.tsx';
+import OngoingPatientsPage from '../pages/OngoingPatientsPage.tsx';
 // Import Layout
-import Layout from './components/Layout.tsx';
+import Layout from '../components/Layout.tsx';
 
 
 //==============================================================================
